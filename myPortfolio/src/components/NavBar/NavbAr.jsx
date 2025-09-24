@@ -1,7 +1,7 @@
 import React from 'react'
 import './NavbAr.css'
-import logo from '../../assets/logo.png'
-function NavbAr() {
+import logo from '../../assets/logo.svg'
+const NavbAr = () => {
   return (
     <div className='navbar'>
         <img src={logo} alt="" />
