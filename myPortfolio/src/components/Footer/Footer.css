@@ -1,8 +1,25 @@
 .footer{
-    margin: 50px 170px;
+    margin: 50px 130px;
     display: flex;
     flex-direction: column;
     gap:30px;
+}
+.logo {
+    font-family: 'Outfit', sans-serif; /* Use your preferred font */
+    font-size: 70px; /* Adjust the font size */
+    font-weight: 700; /* Make the font bold */
+    background: linear-gradient(270deg, #DF8908 80%, #B415FF 100%); /* Gradient color */
+    background-clip: text; /* Apply the gradient to the text */
+    -webkit-background-clip: text; /* For Safari */
+    -webkit-text-fill-color: transparent; /* Make the text color transparent to show the gradient */
+    text-align: left; /* Center the text */
+    letter-spacing: 2px; /* Add spacing between letters */
+    padding: 10px 0; /* Add padding around the logo */
+}
+.logo:hover{
+    color: #ff6b6b;
+    transform: scale(1.0);
+    text-shadow: 0 5px 15px rgba(255, 107, 107, 0.3);
 }
 .footer-top{
     display: flex;
@@ -10,7 +27,7 @@
 }
 .footer-top-left p{
     font-size: 20px;
-    max-width: 400px;
+    max-width: 800px;
 }
 .footer-top-right{
     display: flex;
@@ -57,4 +74,18 @@
 .footer-subscribe:hover{
     transform: scale(1.1);
     transition: 0.3s;
+}
+@media(max-width:768px){
+    .footer{
+        margin: 50px 70px;
+    }
+    .footer-top{
+        flex-direction: column;
+        gap: 50px;
+    }
+    .footer-bottom{
+        display: flex;
+        flex-direction: column-reverse;
+        margin-bottom: 50px;
+    }
 }

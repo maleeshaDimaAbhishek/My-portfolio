@@ -4,7 +4,7 @@
     align-items: center;
     justify-content: center;
     gap: 80px;
-    margin: 80px 170px;
+    margin: 80px 90px;
 }
 .about-title{
     position: relative;
@@ -33,8 +33,8 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
-    font-size: 24px;
-    font-weight: 500;
+    font-size: 20px;
+    font-weight: 400;
 }
 .about-skills{
     display: flex;
@@ -48,8 +48,8 @@
     transition: 0.3s;
 }
 .about-skill p{
-    min-width: 150px;
-    font-size: 24px;
+    min-width: 170px;
+    font-size: 22px;
     font-weight: 500;
 }
 .about-skill hr{
@@ -92,4 +92,57 @@
 .about-archievement:hover{
     transform:scale(1.12);
     transition: 0.5s;
+}
+.profile_image{
+    width: 300px;
+    height: 450px;
+}
+@media(max-width:768px){
+    .about{
+        gap: 80px;
+        margin: 50px 70px;
+        align-items: start;
+    }
+    .about-title h1{
+        font-size: 50px;
+        padding: 0;
+    }
+    .about-title img{
+        width: 130px;
+        right: -20px;
+    }
+    .about-sections{
+        flex-direction: column;
+    }
+    .about-left{
+        display: none;
+    }
+    .about-paragraph{
+        font-size: 18px;
+        line-height: 32px;
+    }
+    .about-skill{
+        gap: 20px;
+        align-items: center;
+    }
+    .about-skill p{
+        font-size: 20px;
+    }
+    .about-skill hr{
+        height: 6px;
+    }
+    .about-archievements{
+        justify-content: space-between;
+    }
+    .about-archievement{
+        gap: 10px;
+    }
+    .about-archievement h1{
+        font-size: 34px;
+        font-weight: 700;
+    }
+    .about-archievement p{
+        text-align: center;
+        font-size: 16px;
+    }
 }
